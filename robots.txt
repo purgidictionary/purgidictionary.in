@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://purgidictionary.in/sitemap.xml
