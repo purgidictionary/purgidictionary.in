@@ -4,14 +4,24 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>The Purgi Dictionary | Purgi Dictionary</title>
-<meta name="description" content="How the 5,000-entry Purgi Dictionary is structured and why it is designed as a multilingual public resource.">
-<link rel="canonical" href="https://purgidictionary.in/">
+<meta name="description" content="The 5,000-entry multilingual Purgi–English–Hindi–Urdu digital dictionary, created through field documentation and community engagement in Kargil.">
+<link rel="canonical" href="https://purgidictionary.in/dictionary.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Purgi Dictionary">
+<meta property="og:title" content="The Purgi Dictionary | Purgi Dictionary">
+<meta property="og:description" content="The 5,000-entry multilingual Purgi–English–Hindi–Urdu digital dictionary, created through field documentation and community engagement in Kargil.">
+<meta property="og:url" content="https://purgidictionary.in/dictionary.html">
+<meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <nav><div class="wrap nav">
 <a class="brand" href="index.html">Purgi Dictionary<span>Purgi · English · Hindi · Urdu</span></a>
-<div class="links">
+<button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-links">
+<span></span><span></span><span></span>
+</button>
+<div class="links" id="site-links">
     <a href="index.html">Home</a>
     <a href="purgi-language.html">About Purgi</a>
     <a href="dictionary.html">Dictionary</a>
@@ -20,11 +30,11 @@
     <a href="phase-ii.html">Phase II</a>
     <a href="winsy-abraham.html">Dr. Winsy Abraham</a>
     <a href="resources.html">Resources</a>
-    </div>
+</div>
 </div></nav>
 
 <header class="pagehead"><div class="wrap"><div class="kicker">The resource</div>
-<h1>The Purgi Dictionary</h1><p class="lead">5,000 lexical entries connecting Purgi, English, Hindi and Urdu.</p></div></header>
+<h1>The Purgi Dictionary</h1><p class="lead">The first-ever multilingual digital Purgi Dictionary, with 5,000 lexical entries connecting Purgi, English, Hindi and Urdu.</p></div></header>
 <section class="section"><div class="wrap">
 <div class="grid">
 <div class="card"><div class="stat">5,000</div><b>Entries</b><p class="muted">The first digital edition contains exactly 5,000 lexical entries.</p></div>
@@ -48,7 +58,6 @@
 <tr><th>Languages</th><td>Purgi · English · Hindi · Urdu</td></tr>
 <tr><th>ISBN</th><td>978-93-345-2302-7</td></tr>
 <tr><th>Access</th><td>Free Android and iOS applications</td></tr></table>
-<div class="callout"><b>The website is not a replacement for the app.</b><br>The complete dictionary is intentionally delivered through the free mobile applications. This site provides the project's official public record, context and future direction.</div>
 <p><a class="btn primary" href="https://play.google.com/store/apps/details?id=org.purgi.prx.dictionary">Android App</a><a class="btn" href="https://apps.apple.com/us/app/purgi-dictionary/id6780769907">iOS App</a></p>
 </div></section>
 
@@ -57,4 +66,24 @@
 Created and maintained by Dr. Winsy Abraham · Kargil, Ladakh, India<br>
 <span class="small">The website documents the project; the complete 5,000-entry dictionary is available through the free mobile applications.</span>
 </div></footer>
+
+<script>
+(function(){
+  const toggle=document.querySelector('.menu-toggle');
+  const links=document.querySelector('.links');
+  if(!toggle||!links)return;
+  toggle.addEventListener('click',function(){
+    const open=links.classList.toggle('open');
+    toggle.setAttribute('aria-expanded',open?'true':'false');
+    toggle.setAttribute('aria-label',open?'Close navigation menu':'Open navigation menu');
+  });
+  links.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click',function(){
+      links.classList.remove('open');
+      toggle.setAttribute('aria-expanded','false');
+      toggle.setAttribute('aria-label','Open navigation menu');
+    });
+  });
+})();
+</script>
 </body></html>

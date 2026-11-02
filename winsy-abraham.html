@@ -4,14 +4,24 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>About Dr. Winsy Abraham | Purgi Dictionary</title>
-<meta name="description" content="About Dr. Winsy Abraham, educator and creator of the Purgi Dictionary.">
-<link rel="canonical" href="https://purgidictionary.in/">
+<meta name="description" content="Dr. Winsy Abraham, educator and creator of the 5,000-entry multilingual digital Purgi Dictionary.">
+<link rel="canonical" href="https://purgidictionary.in/winsy-abraham.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Purgi Dictionary">
+<meta property="og:title" content="About Dr. Winsy Abraham | Purgi Dictionary">
+<meta property="og:description" content="Dr. Winsy Abraham, educator and creator of the 5,000-entry multilingual digital Purgi Dictionary.">
+<meta property="og:url" content="https://purgidictionary.in/winsy-abraham.html">
+<meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <nav><div class="wrap nav">
 <a class="brand" href="index.html">Purgi Dictionary<span>Purgi · English · Hindi · Urdu</span></a>
-<div class="links">
+<button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-links">
+<span></span><span></span><span></span>
+</button>
+<div class="links" id="site-links">
     <a href="index.html">Home</a>
     <a href="purgi-language.html">About Purgi</a>
     <a href="dictionary.html">Dictionary</a>
@@ -20,7 +30,7 @@
     <a href="phase-ii.html">Phase II</a>
     <a href="winsy-abraham.html">Dr. Winsy Abraham</a>
     <a href="resources.html">Resources</a>
-    </div>
+</div>
 </div></nav>
 
 <header class="pagehead"><div class="wrap"><div class="kicker">The creator</div>
@@ -37,7 +47,6 @@
 </ul>
 <h2>The Purgi work</h2>
 <p>As a non-native learner, Dr. Abraham entered Purgi through direct engagement with speakers and communities. Over approximately four years he travelled nearly 500 km and visited more than 60 villages, collecting vocabulary and observing local usage. This work culminated in the 5,000-entry multilingual digital dictionary.</p>
-<div class="callout"><b>The dictionary remains the central focus of this website.</b> Dr. Abraham's wider education and community work provides context for the journey that led to the language project.</div>
 </div></section>
 
 <footer><div class="wrap">
@@ -45,4 +54,24 @@
 Created and maintained by Dr. Winsy Abraham · Kargil, Ladakh, India<br>
 <span class="small">The website documents the project; the complete 5,000-entry dictionary is available through the free mobile applications.</span>
 </div></footer>
+
+<script>
+(function(){
+  const toggle=document.querySelector('.menu-toggle');
+  const links=document.querySelector('.links');
+  if(!toggle||!links)return;
+  toggle.addEventListener('click',function(){
+    const open=links.classList.toggle('open');
+    toggle.setAttribute('aria-expanded',open?'true':'false');
+    toggle.setAttribute('aria-label',open?'Close navigation menu':'Open navigation menu');
+  });
+  links.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click',function(){
+      links.classList.remove('open');
+      toggle.setAttribute('aria-expanded','false');
+      toggle.setAttribute('aria-label','Open navigation menu');
+    });
+  });
+})();
+</script>
 </body></html>
