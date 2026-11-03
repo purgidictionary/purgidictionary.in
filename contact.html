@@ -15,7 +15,7 @@
 <input type="hidden" name="_subject" value="Purgi Dictionary — Website Enquiry">
 <input type="hidden" name="_template" value="table">
 <input type="hidden" name="_captcha" value="true">
-<input type="text" name="_honey" style="display:none">
+<input type="text" name="_honey" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
 <div class="form-field"><label for="name">Name</label><input id="name" name="name" type="text" required autocomplete="name"></div>
 <div class="form-field"><label for="email">Email address</label><input id="email" name="email" type="email" required autocomplete="email"></div>
 <div class="form-field"><label for="subject">Subject</label><input id="subject" name="subject" type="text" required></div>
@@ -24,5 +24,5 @@
 </form>
 </div></div></section>
 <footer><div class="wrap"><div class="footer-top"><div><b>Purgi Dictionary</b> · A free digital language resource</div><div class="footer-right">Created and maintained by <a href="winsy-abraham.html"><b>Dr. Winsy Abraham</b></a> · Kargil, Ladakh, India</div></div><div class="footer-bottom">The website documents the project; the complete 5,000-entry dictionary is available through the free mobile applications.</div></div></footer>
-<script>(function(){const toggle=document.querySelector('.menu-toggle');const links=document.querySelector('.links');if(!toggle||!links)return;toggle.addEventListener('click',function(){const open=links.classList.toggle('open');toggle.setAttribute('aria-expanded',open?'true':'false');toggle.setAttribute('aria-label',open?'Close navigation menu':'Open navigation menu');});links.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){links.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Open navigation menu');});});})();</script>
+<script src="script.js" defer></script>
 </body></html>
