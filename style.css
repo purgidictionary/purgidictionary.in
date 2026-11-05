@@ -86,6 +86,7 @@ a:focus-visible,.btn:focus-visible,.menu-toggle:focus-visible{outline:3px solid 
 .speaking-section-title{font-size:26px;line-height:1.2;letter-spacing:-.025em;white-space:nowrap}
 .speaking-event-title{margin:0;font-size:16px;line-height:1.35}
 .prose p.speaking-event-date{margin:0 0 8px;font-size:16px;line-height:1.35}
-.prose p.speaking-description{margin-bottom:0}
-.prose p.speaking-link{margin-top:0;margin-bottom:14px;line-height:1.35}
+.prose p.speaking-description{margin:0 0 16px}
+.prose p.speaking-description + p.speaking-link{margin-top:0;margin-bottom:14px}
+.prose p.speaking-link{line-height:1.35}
 @media(max-width:600px){.speaking-section-title{font-size:clamp(17px,4.5vw,24px)}}
