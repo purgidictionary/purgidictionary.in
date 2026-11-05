@@ -90,3 +90,8 @@ a:focus-visible,.btn:focus-visible,.menu-toggle:focus-visible{outline:3px solid 
 .prose p.speaking-description + p.speaking-link{margin-top:0;margin-bottom:24px}
 .prose p.speaking-link{line-height:1.35}
 @media(max-width:600px){.speaking-section-title{font-size:clamp(17px,4.5vw,24px)}}
+
+/* Centered professional profile link */
+.profile-link-box{max-width:420px;margin:32px auto 0;padding:18px 24px;text-align:center}
+.prose .profile-link-box p{margin:0}
+.profile-link-box .btn{margin:0}
