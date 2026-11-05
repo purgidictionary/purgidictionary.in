@@ -81,3 +81,9 @@ a:focus-visible,.btn:focus-visible,.menu-toggle:focus-visible{outline:3px solid 
   .footer-right{text-align:left}
 }
 @media(max-width:820px){.links{max-height:calc(100vh - 68px);overflow:auto}.links a{min-height:44px;display:flex;align-items:center}.glance .grid2{grid-template-columns:1fr}}
+
+/* Speaking engagements section */
+.speaking-section-title{font-size:26px;line-height:1.2;letter-spacing:-.025em;white-space:nowrap}
+.speaking-event-title{margin:0}
+.prose p.speaking-event-date{margin:0 0 8px;font-size:16px;line-height:1.35}
+@media(max-width:600px){.speaking-section-title{font-size:clamp(17px,4.5vw,24px)}}
