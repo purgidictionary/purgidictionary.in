@@ -9,6 +9,10 @@ a{color:var(--teal)}
 .wrap{max-width:1160px;margin:auto;padding:0 24px}
 nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+/* Desktop: keep prose sections on the same 1160px frame as the header and footer. */
+@media(min-width:821px){
+  .wrap.prose{max-width:1160px}
+}
 @media(min-width:1101px){
   .nav{max-width:1160px;margin-left:auto;margin-right:auto;justify-content:flex-start;gap:18px}
   .brand{flex:0 0 300px;margin-right:0}
