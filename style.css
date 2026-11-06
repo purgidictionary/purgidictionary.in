@@ -62,8 +62,9 @@ footer{border-top:1px solid var(--line);padding:32px 0 48px;color:var(--muted);f
 .footer-right{text-align:right}
 .footer-bottom{text-align:center;margin-top:14px}
 .small{font-size:13px;color:var(--muted)}
-.references{font-size:12px;line-height:1.55;color:var(--muted);margin-top:8px}
-.references h2{font-size:19px;letter-spacing:-.01em;margin-bottom:8px}
+.references{font-size:13px;line-height:1.5;color:var(--muted);margin-top:8px}
+.references p,.references a{font-size:13px;line-height:1.5}
+.references h2{font-size:16px;letter-spacing:-.01em;margin-bottom:6px}
 .references a{color:var(--muted)}
 .table{width:100%;border-collapse:collapse;margin:25px 0}
 .table th,.table td{border-bottom:1px solid var(--line);text-align:left;padding:13px 10px;vertical-align:top}
