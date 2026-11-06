@@ -17,7 +17,7 @@
   const backToTop=document.querySelector('.back-to-top');
   if(backToTop){
     const updateBackToTop=function(){
-      backToTop.classList.toggle('is-visible',window.scrollY>360);
+      backToTop.classList.toggle('is-visible',window.scrollY>(window.matchMedia('(min-width: 821px)').matches?180:360));
     };
     window.addEventListener('scroll',updateBackToTop,{passive:true});
     updateBackToTop();
