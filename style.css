@@ -7,12 +7,16 @@ html{scroll-behavior:smooth}
 body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.7}
 a{color:var(--teal)}
 .wrap{max-width:1160px;margin:auto;padding:0 24px}
-@media(min-width:1101px){.wrap{width:calc(100% - 96px);max-width:1320px;margin-left:auto;margin-right:auto;padding-left:24px;padding-right:24px}}
+@media(min-width:1101px){
+  .wrap{width:calc(100% - 160px);max-width:1380px;margin-left:auto;margin-right:auto;padding-left:0;padding-right:0}
+  .wrap.prose{max-width:1380px}
+  .wrap.prose>p,.wrap.prose>ul,.wrap.prose>.timeline,.wrap.prose>.table{max-width:1000px}
+}
 nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
 @media(min-width:1101px){
-  .nav{max-width:none;margin-left:auto;margin-right:auto;justify-content:flex-start;gap:14px}
-  .brand{flex:0 0 250px;margin-right:0}
+  .nav{max-width:1380px;margin-left:auto;margin-right:auto;justify-content:flex-start;gap:10px}
+  .brand{flex:0 0 230px;margin-right:0}
   .brand span{white-space:normal;font-size:10px;line-height:1.45;letter-spacing:.08em}
   .mobile-brand-break{display:block}
   .links{flex:1 1 auto;min-width:0;flex-wrap:nowrap;justify-content:space-between;gap:5px}
