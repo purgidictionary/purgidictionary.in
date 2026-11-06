@@ -21,13 +21,15 @@ nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-f
   .links{flex:1 1 auto;min-width:0;flex-wrap:nowrap;justify-content:space-between;gap:5px}
   .links a{font-size:12px;white-space:nowrap}
 }
+/* Tablet navigation: retain the full navigation in one compact horizontal row. */
 @media(min-width:821px) and (max-width:1100px){
-  .nav{min-height:68px;position:relative}
-  .menu-toggle{display:block;flex:0 0 auto}
-  .links{display:none;position:absolute;top:68px;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 8px 20px rgba(23,42,42,.08);padding:10px 24px 16px;flex-direction:column;align-items:stretch;gap:0}
-  .links.open{display:flex}
-  .links a{padding:12px 0;border-bottom:1px solid #edf1f0;font-size:16px;min-height:44px;display:flex;align-items:center}
-  .links a:last-child{border-bottom:0}
+  .nav{min-height:68px;gap:10px;justify-content:flex-start}
+  .brand{flex:0 0 185px;font-size:17px}
+  .brand span{font-size:9px;line-height:1.3;letter-spacing:.035em;white-space:nowrap}
+  .mobile-brand-break{display:none}
+  .menu-toggle{display:none}
+  .links{display:flex;flex:1 1 auto;min-width:0;flex-wrap:nowrap;justify-content:space-between;gap:4px}
+  .links a{font-size:10px;white-space:nowrap;letter-spacing:-.015em}
 }
 .mobile-brand-break{display:none}
 
