@@ -100,6 +100,18 @@ a:focus-visible,.btn:focus-visible,.menu-toggle:focus-visible{outline:3px solid 
   .footer-bottom{text-align:center}
 }
 
+/* Mobile-only navigation paths on the homepage */
+.mobile-page-link,.mobile-link-row,.mobile-explore{display:none}
+@media(max-width:600px){
+  .mobile-page-link{display:inline-block;margin-top:14px}
+  .mobile-link-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+  .mobile-link-row .btn{margin:0}
+  .mobile-explore{display:block;background:var(--cream);border-block:1px solid var(--line)}
+  .mobile-explore-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:22px}
+  .mobile-explore-grid a{display:flex;flex-direction:column;justify-content:space-between;gap:8px;min-height:100px;padding:15px;border:1px solid var(--line);border-radius:12px;background:#fff;color:var(--ink);font-weight:750;text-decoration:none}
+  .mobile-explore-grid a span{font-size:12px;line-height:1.4;font-weight:500;color:var(--teal)}
+}
+
 /* Centered professional profile link */
 .profile-link-box{max-width:420px;margin:32px auto 0;padding:18px 24px;text-align:center}
 .prose .profile-link-box p{margin:0}
