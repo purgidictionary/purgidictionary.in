@@ -10,10 +10,10 @@ a{color:var(--teal)}
 nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
 @media(min-width:821px){
-  .nav{gap:14px}
-  .brand{flex:0 0 auto}
-  .brand span{white-space:nowrap;font-size:11px;letter-spacing:.085em}
-  .links{flex-wrap:nowrap;gap:12px}
+  .nav{gap:32px}
+  .brand{flex:0 0 auto;margin-right:8px}
+  .brand span{white-space:nowrap;font-size:9.5px;letter-spacing:.075em}
+  .links{flex:0 1 auto;flex-wrap:nowrap;gap:11px}
   .links a{font-size:14px;white-space:nowrap}
 }
 .mobile-brand-break{display:none}
