@@ -10,11 +10,12 @@ a{color:var(--teal)}
 nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
 @media(min-width:821px){
-  .nav{gap:32px}
-  .brand{flex:0 0 auto;margin-right:8px}
-  .brand span{white-space:nowrap;font-size:9.5px;letter-spacing:.075em}
-  .links{flex:0 1 auto;flex-wrap:nowrap;gap:11px}
-  .links a{font-size:14px;white-space:nowrap}
+  .nav{justify-content:flex-start;gap:24px}
+  .brand{flex:0 0 390px;margin-right:0}
+  .brand span{white-space:normal;font-size:10px;line-height:1.45;letter-spacing:.08em}
+  .mobile-brand-break{display:block}
+  .links{flex:1 1 auto;min-width:0;flex-wrap:nowrap;justify-content:space-between;gap:8px}
+  .links a{font-size:13px;white-space:nowrap}
 }
 .mobile-brand-break{display:none}
 
