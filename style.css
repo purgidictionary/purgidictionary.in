@@ -10,7 +10,7 @@ a{color:var(--teal)}
 nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
 @media(min-width:1101px){
-  .nav{width:calc(100% - 64px);max-width:1500px;box-sizing:border-box;margin-left:auto;margin-right:auto;justify-content:flex-start;gap:18px}
+  .nav{max-width:1160px;margin-left:auto;margin-right:auto;justify-content:flex-start;gap:18px}
   .brand{flex:0 0 300px;margin-right:0}
   .brand span{white-space:normal;font-size:10px;line-height:1.45;letter-spacing:.08em}
   .mobile-brand-break{display:block}
