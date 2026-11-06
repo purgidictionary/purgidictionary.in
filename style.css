@@ -157,3 +157,9 @@ a:focus-visible,.btn:focus-visible,.menu-toggle:focus-visible{outline:3px solid 
 }
 
 @media(min-width:821px){.mobile-brand-break{display:block}}
+
+/* Desktop brand: keep the full tagline on one calm line beneath the name. */
+@media(min-width:1101px){
+  .brand span{white-space:nowrap;font-size:10px;line-height:1.35;letter-spacing:.045em}
+  .mobile-brand-break{display:none}
+}
