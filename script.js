@@ -14,4 +14,12 @@
       toggle.setAttribute('aria-label','Open navigation menu');
     });
   });
+  const backToTop=document.querySelector('.back-to-top');
+  if(backToTop){
+    const updateBackToTop=function(){
+      backToTop.classList.toggle('is-visible',window.scrollY>360);
+    };
+    window.addEventListener('scroll',updateBackToTop,{passive:true});
+    updateBackToTop();
+  }
 })();
